@@ -14,14 +14,31 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[85vh] w-full overflow-hidden">
-        {/* Abstract Dark Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=2400&q=80"
-            alt="Hero Background"
-            className="h-full w-full object-cover opacity-60"
-          />
+     <section className="relative h-[85vh] w-full overflow-hidden">
+  {/* Abstract Dark Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=2400&q=80"
+      alt="Hero Background"
+      className="absolute inset-0 h-full w-full object-cover opacity-60"
+    />
+
+    <video
+      className="absolute inset-0 h-full w-full object-cover opacity-60"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source
+        src="https://tkserver.serv00.net/vdo/WhatsApp%20Video%202026-01-16%20at%208.29.20%20PM.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
 
