@@ -15,7 +15,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative h-[85vh] w-full overflow-hidden">
-        {/* Video Background ONLY */}
+        {/* Vercel-safe Video Background */}
         <div className="absolute inset-0 z-0">
           <video
             className="absolute inset-0 h-full w-full object-cover opacity-60"
@@ -23,6 +23,7 @@ export default function HomePage() {
             muted
             loop
             playsInline
+            preload="none"
           >
             <source
               src="https://tkserver.serv00.net/vdo/WhatsApp%20Video%202026-01-16%20at%208.29.20%20PM.mp4"
@@ -114,24 +115,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 border-t border-white/10 text-center text-neutral-500 text-sm">
         <div className="container mx-auto px-4">
           <p>
             © {new Date().getFullYear()} C10 NOIR · Made with ❤ by{" "}
-            <a
-              href="https://github.com/MrTusarRX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/MrTusarRX" target="_blank" rel="noopener noreferrer">
               Tusar Khan
             </a>{" "}
             &{" "}
-            <a
-              href="https://github.com/techflux0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/techflux0" target="_blank" rel="noopener noreferrer">
               techflux0
             </a>
           </p>
