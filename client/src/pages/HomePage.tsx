@@ -14,36 +14,30 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-     <section className="relative h-[85vh] w-full overflow-hidden">
-  {/* Background Layer */}
-  <div className="absolute inset-0 z-0">
-    {/* Fallback Image */}
-    <img
-      src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=2400&q=80"
-      alt="Hero Background"
-      className="absolute inset-0 h-full w-full object-cover opacity-60"
+ <section className="relative h-[85vh] w-full overflow-hidden">
+  {/* Video Background */}
+  <video
+    className="absolute inset-0 h-full w-full object-cover opacity-60"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source
+      src="https://tkserver.serv00.net/vdo/WhatsApp%20Video%202026-01-16%20at%208.29.20%20PM.mp4"
+      type="video/mp4"
     />
+  </video>
 
-    {/* Video Overlay */}
-    <video
-      className="absolute inset-0 h-full w-full object-cover opacity-60"
-      autoPlay
-      muted
-      loop
-      playsInline
-    >
-      <source
-        src="https://tkserver.serv00.net/vdo/WhatsApp%20Video%202026-01-16%20at%208.29.20%20PM.mp4"
-        type="video/mp4"
-      />
-    </video>
-  </div>
+  {/* Optional dark overlay */}
+  <div className="absolute inset-0 bg-black/40" />
 
-  {/* Content goes here */}
+  {/* Content */}
   <div className="relative z-10 flex h-full items-center justify-center">
-    {/* Your hero text / buttons */}
+    {/* your text / buttons */}
   </div>
 </section>
+
 
 
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
